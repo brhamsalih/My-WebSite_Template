@@ -12,10 +12,10 @@
   height: 100%;
   display: grid;
   grid-template-areas:
-    'nav aside aside section section section'
-    'nav aside aside main main main'
-    'nav aside aside main main main'
-    'nav aside aside main main main'
+    'nav aside  section section section'
+    'nav aside  main main main'
+    'nav aside  main main main'
+    'nav aside  main main main'
   ;
   gap: 2px;
   background-color: #f7f7f7;
@@ -24,17 +24,18 @@
   nav{grid-area: nav;background-color: #fff;}
   aside {grid-area: aside;background: #fff;
      position:fixed;
+     display: flex;
+     flex-direction: column;
      width:30%;
      height:98%;
      left:8%;
-     top:1%;
-     display: flex;
+     top: 1%;
      justify-content: center;
      align-items: center;
      z-index: 0;
      border: 3px solid #fff;
      border-radius: 15px;
-     box-shadow: 0 4px 8px 0 #00FFFF, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     box-shadow: 0 4px 8px 0 #4070f4, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
   .section { grid-area: section; background-color: #fff;
     position: fixed;
@@ -49,12 +50,13 @@
     border: 3px solid #fff;
     border-radius: 15px;
     padding: 1%;
-    box-shadow: 0 4px 8px 0 #00FFFF, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 #4070f4, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    }
    legend{
-    background: #00FFFF;
+    background: #4070f4;
     border-radius: 3px;
     padding: 2px;
+    color: #fff;
   }
   .main { grid-area: main; background-color: #fff;
     position: fixed;
@@ -69,7 +71,7 @@
     padding: 1%;
     overflow-y: scroll;
     border-radius: 15px;
-    box-shadow: 0 4px 8px 0 #00FFFF, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 #4070f4, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    }
   .main-container{
     position:relative;
@@ -78,6 +80,37 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
    }
+   .image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding: 3px;
+   }
+  .image .profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+  aside .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  aside .text-data .name{
+    font-size: 22px;
+    font-weight: 500;
+  }
+  aside .text-data .job{
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+
   .main-card li{
     position:relative;
     width: 200px;
@@ -89,8 +122,7 @@
     text-align: center;
     list-style: none;
   }
-
-
+ 
 
 
 

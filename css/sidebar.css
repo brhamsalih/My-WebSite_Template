@@ -14,13 +14,13 @@
     z-index: 1;
     border: 3px solid #fff;
     border-radius: 15px;
-    box-shadow: 0 4px 8px 0 #00FFFF, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 #4070f4, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .navigation.open{
     width: 140px;
     border: 3px solid #fff;
     border-radius: 15px;
-    box-shadow: 0 4px 8px 0 #00FFFF, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 #4070f4, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .navigation .menu-toggle{
     position: absolute;
